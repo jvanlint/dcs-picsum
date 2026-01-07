@@ -1,0 +1,730 @@
+{
+  "schema": {
+    "description": "Available values for each metadata field",
+    "aircraft": [
+      "F-18C",
+      "F-16C",
+      "F-15C",
+      "F-15E",
+      "F-14",
+      "F-5E",
+      "F-4E",
+      "A-10C",
+      "AV-8B",
+      "JF-17",
+      "Mirage-2000C",
+      "AJS-37",
+      "Mi-24",
+      "AH-64D",
+      "UH-60L",
+      "OH-58D",
+      "Ka-50",
+      "Mi-8",
+      "SA-342",
+      "CH-47F"
+    ],
+    "location": [
+      "carrier",
+      "desert",
+      "mountains",
+      "urban",
+      "sea",
+      "airfield",
+      "forest",
+      "snow",
+      "island"
+    ],
+    "time_of_day": [
+      "day",
+      "night",
+      "dawn",
+      "dusk"
+    ],
+    "weather": [
+      "clear",
+      "cloudy",
+      "rain",
+      "fog",
+      "storm"
+    ],
+    "tags": [
+      "combat",
+      "landing",
+      "takeoff",
+      "formation",
+      "cockpit",
+      "external",
+      "weapon",
+      "refueling",
+      "carrier-ops",
+      "ground-attack"
+    ]
+  },
+  "images": {
+    "DCS_2.8_World_Combat_Flight_Simulator_F_A-18C-16.jpg": {
+      "aircraft": ["F-18C"],
+      "location": "carrier",
+      "time_of_day": "day",
+      "weather": "clear",
+      "tags": ["external", "carrier-ops"]
+    },
+    "DCS_2.8_World_Combat_Flight_Simulator_SA-342_Gazelle_by_Polychop-40.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_220712_155804.png": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_220712_164908.png": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240502_164410.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240502_165241.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240713_135829.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240714_170609.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240815_142448.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240815_142505.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240815_142515.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240815_142534.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240815_143014.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_204758.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_204804.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_204813.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_205506.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_205801.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_205810.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_205937.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_214720.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_214743.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_214807.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_214858.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_214946.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_214948.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_215536.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_215543.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_215642.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_220540.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_220553.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_220610.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_220857.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_220858.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_221653.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240827_222155.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240916_194457.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240916_195301.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240916_200735.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240916_200817.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_240917_222022.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205547.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205556.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205609.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205625.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205626.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205632.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205639.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205703.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205711.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_205728.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_210159.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_210216.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_210824.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_210835.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_210843.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_211401.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_211529.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_214601.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215232.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215236.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215301.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215326.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215338.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215356.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215407.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215416.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215613.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215618.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_215921.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_241015_220227.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_250328_142358.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_250328_142433.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_250331_213917.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_250401_141658.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_250401_143815.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "Screen_250401_193807.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "ah64d-helicopter-flight-simulator-01.png": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-jf17-04-flight-simulator.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-00-mirage-m2000c-flight-simulator.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-09-av-8b-vstol-harrier-fighter-jet-simulator.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-ajs-37-14-viggen-flight-simulator.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-f-14-tomcat-13.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-f16c-viper-19-flight-simulator.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-06-ch-47f.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-06-f-4e-phantom-ii.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-06-f-5e-remastered.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-08-flaming-cliffs-2024.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-10-f-15c.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-11-flaming-cliffs-2024.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-12-black-shark-3.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-23-oh-58d-kiowa-warrior.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-25-f-15e.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    },
+    "dcs-world-flight-simulator-28-a10c-ii-tank-killer.jpg": {
+      "aircraft": ["A-10C"],
+      "location": "desert",
+      "time_of_day": "day",
+      "weather": "clear",
+      "tags": ["external", "ground-attack"]
+    },
+    "dcs-world-mi-24-hind-000-flight-simulator.jpg": {
+      "aircraft": [],
+      "location": "",
+      "time_of_day": "",
+      "weather": "",
+      "tags": []
+    }
+  }
+}
