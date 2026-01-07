@@ -69,6 +69,21 @@ The API includes metadata in response headers:
 - `X-Image-Weather`: Weather conditions
 - `X-Image-Tags`: Comma-separated custom tags
 
+### GET /avatar
+Get a random pilot avatar from the avatars folder
+
+**Query Parameters:**
+- `width` (optional): Desired width in pixels (1-4000)
+- `height` (optional): Desired height in pixels (1-4000)
+
+**Examples:**
+- `/avatar` - Get a random avatar at original size
+- `/avatar?width=200&height=200` - Get a resized 200x200 avatar
+- `/avatar?width=150` - Resize to 150px width, maintain aspect ratio
+
+**Response Headers:**
+- `X-Avatar-Source`: Filename of the returned avatar
+
 ### GET /tags
 List available metadata schema and statistics
 

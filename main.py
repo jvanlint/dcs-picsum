@@ -14,6 +14,7 @@ app = FastAPI(title="Random Screenshot API", version="1.0.0")
 MEDIA_FOLDER = Path("media")
 SUPPORTED_FORMATS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp"}
 METADATA_FILE = MEDIA_FOLDER / "metadata.json"
+AVATARS_FOLDER = MEDIA_FOLDER / "avatars"
 
 # Global metadata cache
 _metadata_cache: Optional[Dict[str, Any]] = None
@@ -140,6 +141,22 @@ def resize_image(image: Image.Image, width: Optional[int], height: Optional[int]
         return image.resize((new_width, height), Image.Resampling.LANCZOS)
 
 
+def get_random_avatar() -> Path:
+    """Get a random avatar from the avatars folder."""
+    if not AVATARS_FOLDER.exists():
+        raise HTTPException(status_code=500, detail="Avatars folder not found")
+
+    avatar_files = [
+        f for f in AVATARS_FOLDER.iterdir()
+        if f.is_file() and f.suffix.lower() in SUPPORTED_FORMATS
+    ]
+
+    if not avatar_files:
+        raise HTTPException(status_code=404, detail="No avatars found in avatars folder")
+
+    return random.choice(avatar_files)
+
+
 @app.get("/")
 async def root():
     """Root endpoint with API information."""
@@ -150,6 +167,8 @@ async def root():
             "/random?width=800&height=600": "Get a random screenshot resized to specific dimensions",
             "/random?aircraft=F-18C": "Get a random screenshot filtered by aircraft",
             "/random?aircraft=F-18C&location=carrier&width=800": "Combine filters with resizing",
+            "/avatar": "Get a random avatar",
+            "/avatar?width=200&height=200": "Get a random avatar resized to specific dimensions",
             "/tags": "List available metadata schema and tag counts",
             "/health": "Health check endpoint"
         }
@@ -214,6 +233,40 @@ async def get_random_screenshot(
             )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error processing image: {str(e)}")
+
+
+@app.get("/avatar")
+async def get_random_avatar_endpoint(
+    width: Optional[int] = Query(None, gt=0, le=4000, description="Desired width in pixels"),
+    height: Optional[int] = Query(None, gt=0, le=4000, description="Desired height in pixels")
+):
+    """
+    Get a random avatar from the avatars folder.
+
+    Optionally resize the avatar by providing width and/or height parameters.
+    If only one dimension is provided, aspect ratio is maintained.
+    """
+    avatar_path = get_random_avatar()
+
+    try:
+        with Image.open(avatar_path) as img:
+            if img.mode in ("RGBA", "LA", "P"):
+                img = img.convert("RGB")
+
+            if width or height:
+                img = resize_image(img, width, height)
+
+            img_byte_arr = BytesIO()
+            img.save(img_byte_arr, format="JPEG", quality=85)
+            img_byte_arr.seek(0)
+
+            return StreamingResponse(
+                img_byte_arr,
+                media_type="image/jpeg",
+                headers={"X-Avatar-Source": avatar_path.name}
+            )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing avatar: {str(e)}")
 
 
 @app.get("/tags")
